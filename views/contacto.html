@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+	<title>Contacto</title>
+</head>
+
+<body>
+
+	<header>
+		<!--logo y rrss encabezado -->
+	
+			<section id="encabezado">
+				<div>
+					<ul class="isotipo">
+						<li><img class="logo" src="../img/logo.jpg" alt="logo_kepe"> </li>
+						<li><h1>K'epe bags</h1></li>
+					</ul>
+				</div>	
+	
+				<div>
+					<ul class="rrss">
+						<li><a href="http://www.facebook.com"><img class="rrss__img" src="../img/facebook.png" alt="facebook"></a></li>
+						<li><a href="http://www.instagram.com"><img class="rrss__img" src="../img/instagram.png" alt="instagram"></a></li>
+						<li><a href="http://www.youtube.com"><img class="rrss__img" src="../img/youtube.png" alt="youtube"></a></li>
+					</ul>
+				</div>
+			</section>
+		<!-- fin logo y rrss encabezado -->		
+	
+				<!-- menú navegación -->
+			<nav class="menu">
+				<div>
+					<ul>
+						<li><a class="menuEfectos" href="../index.html">Home</a></li>
+						<li><a class="menuEfectos" href="productos.html">Productos</a></li>
+						<li><a class="menuEfectos" href="tiendas.html">Tiendas</a></li>
+						<li><a class="menuEfectos" href="quienessomos.html">Quiénes somos</a></li>
+						<li><a class="menuEfectos" href="contacto.html">Contacto</a></li>
+					</ul>	
+				</div>
+			</nav>
+		</header>
+				<!-- fin menú navegación -->
+
+	<!-- formulario de contacto-->			
+	<main>
+		<h2>Contacto</h2>
+		<section class="contacto">
+
+		<div>
+			<form action="contacto.php" method="POST" enctype="multipart/form-data">
+				<fieldset class="contacto__formulario">
+					<legend class="contacto__titulo">Contáctanos por acá</legend>
+					<br> 
+					<div>
+						<label for="nombre" maxlength="100" >Nombre</label>
+						<input type="text" name="Nombre" placeholder="escribe tu nombre">
+						<label for="nombre" maxlength="100" >Apellido</label>
+						<input type="text" name="Apellido" placeholder="escribe tu apellido">
+						<label for="email">Email</label>
+						<input type="email" name="email">
+						<br>
+						<br>
+					</div>
+
+					<div>
+						<h4>¿Eres ciclista?</h4>
+						<select name="ciclista" >
+							<option value="si">Sí</option>
+							<option value="no">No</option>
+							<option value="no se">No estoy seguro</option>
+						</select>
+						<br>
+						<br>
+					</div>
+
+					<div>
+						<h4>¿De dónde eres?</h4>
+						<label for="santiago">Santiago</label>
+						<input type="radio" name="santiago" value="Santiago">
+						<br>
+						<br>
+						<label for="otra region">Otra región de Chile</label>
+						<input type="radio" name="otra region" value="Otra región">
+						<br>
+						<br>
+						<label for="otro pais" cols="30" rows="2">Otro país</label>
+						<input type="radio" name="otro pais" value="Otro país">
+						<textarea name="cual pais" placeholder="¿Cuál país?"></textarea>
+						<br>
+						<br>
+						<br>
+					</div>
+
+					<div>
+						<label for="newsletter">¿Quieres recibir el newsletter?</label>
+						<input type="checkbox" name="aceptar" value="sí">
+						<br>
+						<br>
+					</div>
+
+					<div>
+						<textarea name="mensaje" cols="30" rows="10" placeholder="Escribe aquí tu mensaje"></textarea>
+						<input type="submit" value="Enviar datos">
+						<br>
+						<br>
+						<input type="reset" value="Limpiar datos">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		</section>
+	</main>
+
+	<!-- fin formulario de contacto-->		
+	
+	<!-- footer -->
+	<footer class="pieDePagina">
+		<p class="textoFooter">&#169 2021 Todos los derechos reservados. Sitio desarrollado por Pablo Aguila</p>
+		
+	</footer>
+	<!-- fin footer -->
+
+</body>
+</html>
