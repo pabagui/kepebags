@@ -43,15 +43,29 @@ h2 {
 }
 
 .logo {
+	width: 80px;
+	height: 100px;
+}
+
+/*
+.logo {
 	width: 50px;
 	height: 60px;
 }
+*/
 
+.nombreMarca {
+	color: #E64D19;
+	font-family: 'Syne Tactile', cursive;
+	font-size: 55px;
+}
+/*
 h1 {
 	color: #E64D19;
 	font-family: 'Syne Tactile', cursive;
 	font-size: 55px;
 }
+*/
 
 /* estilo de redes sociales */
 .rrss {
