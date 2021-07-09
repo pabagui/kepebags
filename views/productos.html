@@ -3,114 +3,125 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../assets/estilos.css">
+	<title>Home</title>
+	<!--CDN de bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- --> <link rel="stylesheet" href="../assets/estilos.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
-	<title>Productos</title>
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 	
 	<header>
 		<!--logo y rrss encabezado -->
-	
-			<section id="encabezado">
-				<div>
-					<ul class="isotipo">
-						<li><img class="logo" src="../img/logo.jpg" alt="logo_kepe"> </li>
-						<li><h1>K'epe bags</h1></li>
-					</ul>
-				</div>	
-	
-				<div>
-					<ul class="rrss">
-						<li><a href="http://www.facebook.com"><img class="rrss__img" src="../img/facebook.png" alt="facebook"></a></li>
-						<li><a href="http://www.instagram.com"><img class="rrss__img" src="../img/instagram.png" alt="instagram"></a></li>
-						<li><a href="http://www.youtube.com"><img class="rrss__img" src="../img/youtube.png" alt="youtube"></a></li>
-					</ul>
-				</div>
-			</section>
-		<!-- fin logo y rrss encabezado -->		
-	
-				<!-- menú navegación -->
-			<nav class="menu">
-				<div>
-					<ul>
-						<li><a class="menuEfectos" href="../index.html">Home</a></li>
-						<li><a class="menuEfectos" href="productos.html">Productos</a></li>
-						<li><a class="menuEfectos" href="tiendas.html">Tiendas</a></li>
-						<li><a class="menuEfectos" href="quienessomos.html">Quiénes somos</a></li>
-						<li><a class="menuEfectos" href="contacto.html">Contacto</a></li>
-					</ul>	
-				</div>
-			</nav>
-		</header>
-				<!-- fin menú navegación -->
+	 
+		<!-- ACÁ APLIQUÉ BOOTSTRAP AL ENCABEZADO (GRILLA) -->
+			 <section>
+				 <div class="container">
+					 <div class="row">
+						 <div class="col-md-2"><img class="logo" src="../img/logo.jpg" alt="logo_kepe"></div>
+						 <div class="col-md-2"><h1 class="nombreMarca">K'epe bags</h1></div>
+						 <div class="col-md-2"><br></div>
+						 <div class="col-md-2"><a href="http://www.facebook.com"><img class="rrss__img" src="../img/facebook.png" alt="facebook"></a></div>
+						 <div class="col-md-2"><a href="http://www.instagram.com"><img class="rrss__img" src="../img/instagram.png" alt="instagram"></a></div>
+						 <div class="col-md-2"><a href="http://www.youtube.com"><img class="rrss__img" src="../img/youtube.png" alt="youtube"></a></div>
+					 </div>
+				 </div>
+			 </section>
+		 <!-- fin logo y rrss encabezado -->		
+	 
+				 <!-- menú navegación -->
+
+				 <!-- ACÁ APLIQUÉ BOOTSTRAP AL MENÚ -->
+			 <nav>
+				 <div class="container">
+					 <ul class="nav">
+						 <li class="nav-item btn"><a class="nav-link" href="../index.html">Home</a></li>
+						 <li class="nav-item btn"><a class="nav-link" href="productos.html">Productos</a></li>
+						 <li class="nav-item btn"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+						 <li class="nav-item btn"><a class="nav-link" href="quienessomos.html">Quiénes somos</a></li>
+						 <li class="nav-item btn"><a class="nav-link" href="contacto.html">Contacto</a></li>
+					 </ul>	
+				 </div>
+			 </nav>
+		 </header>
+				 <!-- fin menú navegación -->
 	
 	<!-- sección productos -->
-	<main>
-		<h2>Productos</h2>
-		<section class="productos">
 
-			<div class= "listaProductos">
-  	            <img class="productos__img" src="../img/rojo.jpg" alt="alforja_roja">
-				<ul class="listaProductos__tipo">
-					<h5>Panqara</h5> 
-					<br>  
-					<li>→ color rojo</li>
-					<li>→ transformable a mochila</li>
-					<li>→ impermeable</li>
-					<li>→ capacidad hasta 20 litros</li>
-					<li>→ bolsillo interno para laptop</li>
-					<li>→ incluye pompón tricolor</li>
-				</ul>
-			</div>	
+	<!-- BOOTSTRAP cards-->
+	<main class="contenedorCards d-flex">
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="../img/rojo.jpg" alt="alforja_roja">
+			<div class="card-body">
+			  <h5 class="card-title">Panqara</h5>
+			  <p class="card-text">Alforja-mochila de vibrante color rojo de flor cordillerana, impermeable y cómoda</p>
+			  <a href="#" class="btn btn-primary">Ver más ...</a>
+			</div>
+		  </div>
 
-			<div class= "listaProductos">
-				<img class="productos__img" src="../img/negro.jpg" alt="alforja_negra">
-				<ul class="listaProductos__tipo">
-					<h5>Bombín</h5>
-					<br>
-					<li>→ color negro</li>
-					<li>→ transformable a mochila</li>
-					<li>→ impermeable</li>
-					<li>→ capacidad hasta 20 litros</li>
-					<li>→ bolsillo interno para laptop</li>
-					<li>→ incluye pompón tricolor</li>
-				</ul>
-		  	</div>	
+		  <div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="../img/negro.jpg" alt="alforja_negra">
+			<div class="card-body">
+			  <h5 class="card-title">Bombín</h5>
+			  <p class="card-text">Alforja-mochila en seductor color negro azabache, impermeable y cómoda</p>
+			  <a href="#" class="btn btn-primary">Ver más ...</a>
+			</div>
+		  </div>
 
-			<div class= "listaProductos">
-				<img class="productos__img" src="../img/amarillo.jpg" alt="alforja_amarilla">
-				<ul class="listaProductos__tipo">
-					<h5>Ancuaque</h5>
-					<br>
-					<li>→ color amarillo</li>
-					<li>→ transformable a mochila</li>
-					<li>→ impermeable</li>
-					<li>→ capacidad hasta 20 litros</li>
-					<li>→ bolsillo interno para laptop</li>
-					<li>→ incluye pompón tricolor</li>
-				</ul>
-		  	</div>	
+		  <div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="../img/amarillo.jpg" alt="alforja_amarilla">
+			<div class="card-body">
+			  <h5 class="card-title">Ancuaque</h5>
+			  <p class="card-text">Alforja-mochila amarilla como el sol del desierto, impermeable y cómoda</p>
+			  <a href="#" class="btn btn-primary">Ver más ...</a>
+			</div>
+		  </div>
 
-			<div class= "listaProductos">
-				<img class="productos__img" src="../img/naranjo.jpg" alt="alforja_naranja">
-				<ul class="listaProductos__tipo">
-					<h5>Cavancha</h5>
-					<br>
-					<li>→ color naranja</li>
-					<li>→ transformable a mochila</li>
-					<li>→ impermeable</li>
-					<li>→ capacidad hasta 20 litros</li>
-					<li>→ bolsillo interno para laptop</li>
-					<li>→ incluye pompón tricolor</li>
-				</ul>
-		  	</div>
-		</section>
+		  <div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="../img/naranjo.jpg" alt="alforja_naranja">
+			<div class="card-body">
+			  <h5 class="card-title">Cavancha</h5>
+			  <p class="card-text">Alforja-mochila tan naranja como la arena al atardecer, impermeable y cómoda</p>
+			  <a href="#" class="btn btn-primary">Ver más ...</a>
+			</div>
+		  </div>
 
+	</main>
+	
+
+	<section class="botonModal">
+	<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			Más información ...
+		</button>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">¿Quieres saber más?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+					<p>Haz click en la pestaña Tiendas para visitar nuestros locales o en el formulario de Contacto para que te contemos más sobre nuestro productos</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn btn-primary">Continuar navegando</button>
+					</div>
+				</div>
+				</div>	
+		</div>
+	</section>	
 	<!-- fin sección productos -->
 
 	<!-- footer -->
@@ -119,6 +130,11 @@
 		
 	</footer>
 	<!-- fin footer -->
+
+   	<!-- SCRIPTS JAVASCRIPT -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
 
 </body>
 </html>

@@ -134,8 +134,26 @@ header nav div ul li {
 	padding: 10px 10px;
 }
 
+/* BOOTSTRAP menu*/ 
+.nav-link {
+	color: blanchedalmond;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	color: #E64D19;
+}
+
+.nav-item {
+	margin: 1rem;
+}
+
+.container {
+	margin: 0.5rem;
+}
+
 /* estilo Home */
-.inicio{
+.inicio {
 	display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
@@ -148,7 +166,7 @@ header nav div ul li {
 	width: 50%;
 }
 
-.inicio__img{
+.inicio__img {
 	width: 180px;
 	height: 200px;
 	padding: 16px;
@@ -157,7 +175,7 @@ header nav div ul li {
 	animation-iteration-count:initial;
 }
 
-@keyframes aparecer{
+@keyframes aparecer {
     0% {
         opacity: 0;  /* cuando no tiene animación*/
     }
@@ -229,7 +247,24 @@ h5 {
 	list-style-type: none;
 }
 
+/* BOOTSTRAP productos*/ 
+.card {
+	margin: 2rem;
+}
 
+.btn {
+	background-color: #E64D19;
+	border-color: #E64D19;
+}
+
+.btn:hover {
+	background-color: #FA8E69;
+	border-color: #FA8E69;
+}
+
+.botonModal {
+	margin: 2rem;
+}
 /* estilo Tiendas */
 .tiendas {
 	display: flex;
